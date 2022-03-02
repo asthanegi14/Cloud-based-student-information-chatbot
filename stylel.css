@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Redressed', cursive;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(img/gehu.png);
+    background-position: center ;
+    background-size: cover;
+    position: absolute;
+    overflow-y: auto;
+}
+
+.chat-box{
+    padding: 20px 20px;
+    text-align: center;
+    border: 5px solid #ccc;
+    width: 50%;
+    margin: 15px auto auto auto;
+    top: 10%;
+    left: 20%;
+    right: 20%;
+}
+.chat-box img{
+    width: 100px ;
+}
+.chat-box .typing{
+    display: flex;
+    padding: 18px 30px;
+}
+.typing input{
+    height: 45px;
+    width: calc(100% - 58px);
+    font-size: 17px;
+    border: 1px solid #ccc;
+    padding: 0 13px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+.typing button{
+    width: 55px;
+    border: none;
+    outline: none;
+    background: #333;
+    color: #fff;
+    font-size: 19px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+.chat-box h4{
+    box-sizing: border-box;
+    height: 52px;
+    padding: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    background: #f7f7f7;
+}
+.box p{
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    background: #fff;
+}
+.bot-box{
+    padding: 18px 30px;
+    max-height: 300px;
+    overflow: auto;
+    overflow-y: auto;
+    background: #f7f7f7;
+    padding: 10px 30px 20px 30px;
+}
+.bot-box .chat_outgoing{
+    margin: 15px 0;
+}
+.bot-box .chat_incoming{
+    margin: 15px 0;
+}
+.bot-box .chat_outgoing p{
+    word-wrap: break-word;
+    padding: 8px 16px;
+}
+.bot-box .chat_incoming p{
+    word-wrap: break-word;
+    padding: 8px 16px;
+}
+.bot-box li.outgoing{
+    display: block;
+}
+.msg_title_me{
+    text-align: right;  
+}
+.msg_title_bot{
+    text-align: left;  
+}
+.outgoing .details_out{
+    margin-left: auto;
+    float: right;
+    display: block;
+    max-width: calc(100%-130px);
+}
+.pera{
+    max-width: 80%;
+    background: #ffb6c1;
+    float: right;
+    font-size: 15px;
+    color: #333;
+    border-radius: 18px 18px 0 18px;
+}
+.bot-box .incoming img{
+    height: 40px;
+    width: 40px;
+}
+#b_img{
+   display: block;
+}
+.bot-box li.incoming{
+    display: block;
+}
+.incoming .details_in{
+    display: block;
+   float: left;
+    margin-right: auto;
+    max-width: calc(100%-130px);
+}
+.pera_b{
+    width: max-content;
+    max-width: 60%;
+    background: #add8e6;
+    text-align: left;
+    font-size: 15px;
+    color: #333;
+    border-radius: 18px 18px 18px 0;
+}
+
+@media (max-width: 700px)
+{
+    .chat-box {
+    position: fixed;
+    display: flex;
+    overflow-y: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+    .chat-box img{
+        width: 60px ;
+        height: 60px;
+    }
+    .chat-box .typing{
+        display: flex;
+    }
+    .typing input{
+        font-size: 11px;
+        height: 30px;
+        display: flex;
+    }
+    .typing button{
+        font-size: 11px;
+        height: 32px;
+        width: 40px;
+    }
+    .chat-box h4{
+        font-size: 11px;
+        display: flex;
+        text-align: justify;
+    }
+    .outgoing .details_out p{
+        font-size: 11px;
+    }
+    .incoming .details_in p{
+        font-size: 11px;
+    }
+    .bot-box{
+        margin-top: 10px;
+        height: 150px;
+        width: auto;
+        overflow-y: auto;
+        text-align: justify;
+        position: relative;
+    }
+    h5 .msg_title{
+        font-size: 13px;
+    }
+}
